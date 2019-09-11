@@ -1,0 +1,13 @@
+FROM golang:alpine 
+ENV WDIR my-code
+RUN apk add gi
+RUN mkdir -p  $HOME/src/my-core
+
+ADD . $HOME/src/my-core
+# thư mục mặc định khi chạy
+WORKDIR  $HOME/src/my-core 
+RUN GOOS=linux go build
+RUN ls
+RUN pwd
+ENTRYPOINT ["./example"]
+EXPOSE 8080

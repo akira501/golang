@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>List Users</title>
+</head>
+<body>
+    {{range .Users}}
+        <p>User: {{ .Name}}</p>
+        <br/>
+        <p>Password: {{ .Password}}</p>
+        <br/>
+        <br/>
+    {{end}}
+    
+
+</body>
+</html>

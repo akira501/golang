@@ -1,0 +1,53 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-4 col-sm-6 col-xs-12">
+            <div class="product-detail-thumbnail">
+                <img src={{.newsReturn.Image}} alt="Kem" class="img-fluid">
+            </div>
+        </div>
+        <div class="col-md-8 col-sm-6 col-xs-12">
+            <div class="product-detail">
+                <div class="product-detail-name">
+                    {{.newsReturn.Name}}
+                </div>
+                <div class="product-rating text-left" data-score={{.newsReturn.Rating}}>
+                </div>
+                <div>
+                    <span class="new-price">
+                        <span class="money">{{.newsReturn.NewPrice}}</span> VND
+                    </span>
+                    &ensp;
+                    <span class="old-price">
+                        <span class="money">{{.newsReturn.OldPrice}}</span> VND
+                    </span>
+                </div>
+                <hr>
+                <div class="description">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi repellendus totam neque perspiciatis
+                    pariatur repudiandae dolore ad ratione, optio doloremque, molestiae quia quam, fuga obcaecati
+                    tenetur corrupti sequi dolorem repellat!
+                </div>
+                <hr>
+                <div class="review-div">
+                    <div class="">
+                        Bình luận
+                    </div>
+                    <div class="list-review">
+                        <div class="review">
+                            <div class="reviewer">Nguyễn Văn A</div>
+                            <div class="review-content">Kem rất ngon!!!</div>
+                        </div>
+                        <div class="review">
+                            <div class="reviewer">Nguyễn Thị C</div>
+                            <div class="review-content">Kem ngon ơi là ngon ý. Kem ngon nhất tôi từng ăn.</div>
+                        </div>
+                        <div class="review">
+                            <div class="reviewer">Phan Văn D</div>
+                            <div class="review-content">Không có gì để nói</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

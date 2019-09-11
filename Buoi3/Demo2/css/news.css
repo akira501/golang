@@ -1,0 +1,56 @@
+*{
+	box-sizing: border-box;
+}
+body html{
+	margin: 0;
+	padding: 0;
+}
+img{
+	max-width: 100%;
+}
+@keyframes title {
+	50% {
+		color: red;
+	}
+}
+.wrap{
+	margin: auto;
+	max-width: 1000px;
+}
+.col{
+	float: left;
+	width: 33.333333%;
+	padding: 15px;
+	position: relative;
+}
+.thumb{
+	padding: 4px;
+	border: 1px solid #ddd;
+	cursor: pointer;
+}
+.thumb img{
+	vertical-align: middle;
+	opacity: 1;
+	transition: opacity 0.5s linear;
+}
+.thumb:hover img{
+	opacity: 0.5;
+}
+.text{
+	font-family: Georgia;
+	color: red;
+	text-align: right;
+	position: absolute;
+	width: 300px;
+  	height: 100px;
+  	top: 750px;
+  	right: 15px;
+	animation: cre 5s ease infinite;
+	overflow: hidden;
+}
+h1{
+    text-emphasis: center;
+}
+.thumb p{
+    text-emphasis: center;
+}

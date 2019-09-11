@@ -1,0 +1,26 @@
+<h1>Trang tạo sản phẩm</h1>
+<form class="container" action="/tao-san-pham" method="POST">
+    <label for="pname"><b>Điểm rating</b></label>
+    <input type="text" placeholder="Enter Rating Point" name="Rating" required>
+    <br/>
+    <br/>
+    <label for="pname"><b>Tên sản phẩm</b></label>
+    <input type="text" placeholder="Enter Name Product" name="Name" required>
+    <br/>
+    <br/>
+    <label for="price"><b>Giá sản phẩm</b></label>
+    <input type="text" placeholder="Enter Price Product" name="NewPrice" required>
+    <br/>
+    <br/>
+    
+    <form enctype="multipart/form-data" action="http://127.0.0.1:8080/upload" method="POST">
+		<input type="file" name="uploadfile" />
+		<input type="hidden" name="token" value="{{.}}" />
+		<input type="submit" value="upload" />
+    </form>
+    <br/>
+    <br/>
+    <button type="submit">Thêm sản phẩm</button>
+</form>
+
+<a href="http://localhost:8080/san-pham">List Product</a>

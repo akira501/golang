@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>News</title>
+	<link rel="stylesheet" type="text/css" href="css/new.css">
+</head>
+<body>
+	<div class="wrap">
+            {{range .listNews}}
+		<div class="col">
+			<div class="thumb">  
+                <img src={{.Image}}>
+                <h1>{{ .Title}}</h1>
+                <p>{{ .Author}}</p>
+                <a href="/detail/{{.Id}}" class="card">Xem chi tiết</a>
+            </div>
+        </div>
+        {{end}}
+    </div>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<div class="container">
+        
+    <div class="list-product">
+            {{range .Products}}
+        <div class="item">
+                <a href="/san-pham/{{.Id}}">
+                    <div class="card product">
+                        <img class="card-img-top product-thumbnail" src={{.Image}} alt="Kem">
+                        <div class="card-body">
+                            <div class="product-rating" data-score={{.Rating}}>
+                            </div>
+                            <div class="product-name">
+                                    {{.Name}}
+                            </div>
+                            <div class="product-price">
+                                <div class="new-price">
+                                    <span class="money">{{.NewPrice}}</span> VND
+                                </div>
+                                
+                                {{if gt .OldPrice "0"}}
+                                <div class="old-price">
+                                    <span class="money">{{.OldPrice}}</span> VND
+                                </div>
+                                {{end}}
+                            </div>
+                        </div>
+                    </div>
+                </a>
+        </div>
+            {{end}}
+            
+            <!-- <div class="item">
+                <a href="/san-pham/1">
+                    <div class="card product">
+                        <img class="card-img-top product-thumbnail" src="/resources/image/ic3.png" alt="Kem">
+                        <div class="card-body">
+                            <div class="product-rating" data-score="4">
+                            </div>
+                            <div class="product-name">
+                                Kem trà xanh
+                            </div>
+                            <div class="product-price">
+                                <div class="new-price">
+                                    <span class="money">100000</span> VND
+                                </div>
+                                <div class="old-price">
+                                    <span class="money">120000</span> VND
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="item">
+                <a href="/san-pham/1">
+                    <div class="card product">
+                        <img class="card-img-top product-thumbnail" src="/resources/image/ic4.png" alt="Kem">
+                        <div class="card-body">
+                            <div class="product-rating" data-score="5">
+                            </div>
+                            <div class="product-name">
+                                Kem sữa dừa
+                            </div>
+                            <div class="product-price">
+                                <div class="new-price">
+                                    <span class="money">86000</span> VND
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div> -->
+    </div>
+</div>
