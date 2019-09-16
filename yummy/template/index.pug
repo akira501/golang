@@ -1,0 +1,253 @@
+doctype html
+head
+  meta(charset='utf-8')
+  meta(http-equiv='X-UA-Compatible' content='IE=edge')
+  title Yummy Restaurant
+  meta(name='viewport' content='width=device-width, initial-scale=1')
+  // Bootstrap CSS
+  link(rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css' integrity='sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T' crossorigin='anonymous')
+  // fontAweSome
+  link(rel='stylesheet' href='https://use.fontawesome.com/releases/v5.5.0/css/all.css' integrity='sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU' crossorigin='anonymous')
+  // icon
+  link(rel='icon' href='images/core_img/favicon.ico')
+  // Fonts
+  link(rel='stylesheet' type='text/css' media='screen' href='css/stylesheet.css')
+  link(href="https://fonts.googleapis.com/css?family=Dancing+Script|Great+Vibes|Poppins|Prata&display=swap" rel="stylesheet")
+  link(href='https://fonts.googleapis.com/css?family=Fredericka+the+Great&display=swap' rel='stylesheet')
+  // My css
+  link(rel='stylesheet' type='text/css' media='screen' href='css/main.css')
+  link(rel='stylesheet' type='text/css' media='screen' href='css/index.css')
+  link(rel='stylesheet' type='text/css' media='screen' href='css/css_parts/topHeader.css')
+  link(rel='stylesheet' type='text/css' media='screen' href='css/css_parts/mainMenu.css')
+  link(rel='stylesheet' type='text/css' media='screen' href='css/css_parts/footer.css')
+header.header_area.container-fluid
+  //Top Header Area
+  include template-parts/topHeader.pug
+  // Menu
+  include template-parts/mainMenu.pug
+  //Header
+  .header_main.text-center 
+    .content_header Welcome to yummy
+//Section1
+section.section_1.chefs_info.container-fluid.row
+  //- Đoạn này hay hay
+  .row
+    .col-6.chef_area
+      div.container-fluid
+        h1.chef_heading 
+          | Đầu bếp 
+          span(style='color:black;') của chúng tôi
+      #carouselExampleIndicators.carousel.slide(data-ride='carousel')
+        ol.carousel-indicators
+          li.active(data-target='#carouselExampleIndicators' data-slide-to='0')
+          li(data-target='#carouselExampleIndicators' data-slide-to='1')
+          li(data-target='#carouselExampleIndicators' data-slide-to='2')
+        .carousel-inner
+          .carousel-item.active
+            .chef_content.row
+              .col-4.avatar_chef
+                img(src='images/home_Page/chef_small.png', alt='chef')
+              .col-8.name_chef
+                p.name Kano Kun
+                p.role Bếp trưởng
+            p.content Với 20 năm kinh nghiệm của mình ở các nước trên toàn thế giới, tôi sẽ mang tới những hương vị tuyệt vời nhất cho bạn!   
+          .carousel-item
+            .chef_content.row
+              .col-4.avatar_chef
+                img(src='images/home_Page/chef_small.png', alt='chef')
+              .col-8.name_chef
+                p.name Kano Kun
+                p.role Bếp trưởng
+            p.content Với 20 năm kinh nghiệm của mình ở các nước trên toàn thế giới, tôi sẽ mang tới những hương vị tuyệt vời nhất cho bạn!
+          .carousel-item
+            .chef_content.row
+              .col-4.avatar_chef
+                img(src='images/home_Page/chef_small.png', alt='chef')
+              .col-8.name_chef
+                p.name Kano Kun
+                p.role Bếp trưởng
+            p.content Với 20 năm kinh nghiệm của mình ở các nước trên toàn thế giới, tôi sẽ mang tới những hương vị tuyệt vời nhất cho bạn!        
+    .col-6.chef_image
+      img(src='images/home_Page/chef_big.png', alt='chef')
+//section2      
+section.section_2.gallery.container-fluid
+  div
+    p.heading.text-center 
+      span(style='color:#FD5B00;') Bộ sưu tập 
+      | của chúng tôi
+    p.content.text-center Với các đầu bếp hàng đầu thế giới, chúng tôi đã tạo ra những “tác phẩm nghệ thuật” !
+  div.text-center
+    .menu_section_2
+      nav.navbar.navbar-expand-sm.navbar-light
+        ul.navbar-nav
+          li.nav-item
+            a.nav-link(href='#') TẤT CẢ
+          li.nav-item
+            a.nav-link(href='#') THỊT
+          li.nav-item
+            a.nav-link(href='#') CÁ
+          li.nav-item
+            a.nav-link(href='#') RAU CỦ
+          li.nav-item
+            a.nav-link(href='#') KHAI VỊ
+          li.nav-item
+            a.nav-link(href='#') TRÁNG MIỆNG
+  div.list_image
+    .child-page-listing
+      .grid-container
+        article#3685.location-listing
+          a.location-title(href='#')
+            | Bít tết Wanju
+          .location-image
+            a(href='#')
+              img(width='300' height='169' src='images/home_Page/img1.jpg' alt='Xem chi tiết')
+        article#3685.location-listing
+          a.location-title(href='#')
+            | Bít tết Wanju
+          .location-image
+            a(href='#')
+              img(width='300' height='169' src='images/home_Page/img2.jpg' alt='Xem chi tiết')
+        article#3685.location-listing
+          a.location-title(href='#')
+            | Bít tết Wanju
+          .location-image
+            a(href='#')
+              img(width='300' height='169' src='images/home_Page/img3.jpg' alt='Xem chi tiết')
+        article#3685.location-listing
+          a.location-title(href='#')
+            | Bít tết Wanju
+          .location-image
+            a(href='#')
+              img(width='300' height='169' src='images/home_Page/img4.jpg' alt='Xem chi tiết')
+      .grid-container
+        article#3685.location-listing
+          a.location-title(href='#')
+            | Bít tết Wanju
+          .location-image
+            a(href='#')
+              img(width='300' height='169' src='images/home_Page/img5.jpg' alt='Xem chi tiết')
+        article#3685.location-listing
+          a.location-title(href='#')
+            | Bít tết Wanju
+          .location-image
+            a(href='#')
+              img(width='300' height='169' src='images/home_Page/img6.jpg' alt='Xem chi tiết')
+        article#3685.location-listing
+          a.location-title(href='#')
+            | Bít tết Wanju
+          .location-image
+            a(href='#')
+              img(width='300' height='169' src='images/home_Page/img7.jpg' alt='Xem chi tiết')
+        article#3685.location-listing
+          a.location-title(href='#')
+            | Bít tết Wanju
+          .location-image
+            a(href='#')
+              img(width='300' height='169' src='images/home_Page/img8.jpg' alt='Xem chi tiết')
+        
+
+
+  // end grid container
+
+  //- div
+  //-   .row.text-center.text-lg-left
+  //-     .col-lg-3.col-md-4.col-sm-6
+  //-       a(href='#')
+  //-         img(src='./images/section2/port1.jpg' alt='')
+  //-     .col-lg-3.col-md-4.col-sm-6
+  //-       a(href='#')
+  //-         img(src='./images/section2/port2.jpg' alt='')
+  //-     .col-lg-3.col-md-4.col-sm-6
+  //-       a(href='#')
+  //-         img(src='./images/section2/port3.jpg' alt='')
+  //-     .col-lg-3.col-md-4.col-sm-6
+  //-       a(href='#')
+  //-         img(src='./images/section2/port4.jpg' alt='')
+  //-     .col-lg-3.col-md-4.col-sm-6
+  //-       a(href='#')
+  //-         img(src='./images/section2/port5.jpg' alt='')
+  //-     .col-lg-3.col-md-4.col-sm-6
+  //-       a(href='#')
+  //-         img(src='./images/section2/port6.jpg' alt='')
+  //-     .col-lg-3.col-md-4.col-sm-6
+  //-       a(href='#')
+  //-         img(src='./images/section2/port7.jpg' alt='')
+  //-     .col-lg-3.col-md-4.col-sm-6
+  //-       a(href='#')
+  //-         img(src='./images/section2/port8.jpg' alt='')
+//section3      
+section.section_3.services.container
+  div
+    p.heading.text-center 
+      span(style='color:#FD5B00;') Dịch vụ 
+      | của chúng tôi
+    p.content.text-center Với các đầu bếp hàng đầu thế giới, chúng tôi đã tạo ra những “tác phẩm nghệ thuật” !
+  div.service_content
+    .row.text-center
+      .col-3.service
+        img(src='./images/section3/Rectangle1.png' alt='')
+        p.title Bữa Sáng
+        p.content Khởi động một ngày mới tràn đầy năng lượng
+      .col-3.service
+        img(src='./images/section3/Rectangle2.png' alt='')
+        p.title Bữa Trưa
+        p.content Khởi động một ngày mới tràn đầy năng lượng
+      .col-3.service
+        img(src='./images/section3/Rectangle3.png' alt='')
+        p.title Bữa Tối
+        p.content Khởi động một ngày mới tràn đầy năng lượng
+      .col-3.service
+        img(src='./images/section3/Rectangle4.png' alt='')
+        p.title Yêu Cầu
+        p.content Khởi động một ngày mới tràn đầy năng lượng
+//section4      
+section.section_4.menu_restaurant.container-fuild
+  div
+    p.heading.text-center 
+      span(style='color:#FD5B00;')  Thực đơn 
+      | của chúng tôi
+  div.container
+    .row
+      .col-6.dish
+        div
+          p.dish_name Trứng tráng rau củ
+          p.dish_info Kèm bánh mỳ và sốt chua cay. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .50,000 VND
+        div
+          p.dish_name Trứng tráng rau củ
+          p.dish_info Kèm bánh mỳ và sốt chua cay. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .50,000 VND
+        div
+          p.dish_name Trứng tráng rau củ
+          p.dish_info Kèm bánh mỳ và sốt chua cay. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .50,000 VND
+        div
+          p.dish_name Trứng tráng rau củ
+          p.dish_info Kèm bánh mỳ và sốt chua cay. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .50,000 VND
+        div
+          p.dish_name Trứng tráng rau củ
+          p.dish_info Kèm bánh mỳ và sốt chua cay. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .50,000 VND
+      .col-6.dish
+        div
+          p.dish_name Trứng tráng rau củ
+          p.dish_info Kèm bánh mỳ và sốt chua cay. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .50,000 VND
+        div
+          p.dish_name Trứng tráng rau củ
+          p.dish_info Kèm bánh mỳ và sốt chua cay. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .50,000 VND
+        div
+          p.dish_name Trứng tráng rau củ
+          p.dish_info Kèm bánh mỳ và sốt chua cay. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .50,000 VND
+        div
+          p.dish_name Trứng tráng rau củ
+          p.dish_info Kèm bánh mỳ và sốt chua cay. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .50,000 VND
+        div
+          p.dish_name Trứng tráng rau củ
+          p.dish_info Kèm bánh mỳ và sốt chua cay. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .50,000 VND
+  div.text-center.btn_detail
+    button.btn.btn-dark(type='button') Xem chi tiết
+//footer
+include template-parts/footer.pug
+
+// Optional JavaScript
+// jQuery first, then Popper.js, then Bootstrap JS
+script(type='text/javascript' src='js/script.js')
+script(src='https://code.jquery.com/jquery-3.3.1.slim.min.js' integrity='sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo' crossorigin='anonymous')
+script(src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js' integrity='sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1' crossorigin='anonymous')
+script(src='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js' integrity='sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM' crossorigin='anonymous')

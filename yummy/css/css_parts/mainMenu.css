@@ -1,0 +1,18 @@
+.menu-main .navbar .navbar-brand{
+    color: #FD5B00;
+    padding-left: 3rem;
+}
+
+.menu-main .navbar .nav-border{
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.menu-main .navbar .nav-item-sp a:hover{
+    color: #FD5B00;
+}
+
+@media only screen and (max-width: 1900px) {
+    /* For mobile phones: */
+    
+}

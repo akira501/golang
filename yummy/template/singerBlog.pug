@@ -1,0 +1,110 @@
+doctype html
+head
+  meta(charset='utf-8')
+  meta(http-equiv='X-UA-Compatible' content='IE=edge')
+  title Yummy Restaurant
+  meta(name='viewport' content='width=device-width, initial-scale=1')
+  // Bootstrap CSS
+  link(rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css' integrity='sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T' crossorigin='anonymous')
+  // fontAweSome
+  link(rel='stylesheet' href='https://use.fontawesome.com/releases/v5.5.0/css/all.css' integrity='sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU' crossorigin='anonymous')
+  // icon
+  link(rel='icon' href='images/favicon.ico')
+  // Fonts
+  link(rel='stylesheet' type='text/css' media='screen' href='css/stylesheet.css')
+  link(href="https://fonts.googleapis.com/css?family=Dancing+Script|Great+Vibes|Poppins|Prata&display=swap" rel="stylesheet")
+  // My css
+  link(rel='stylesheet' type='text/css' media='screen' href='css/main.css')
+  link(rel='stylesheet' type='text/css' media='screen' href='css/singerBlog.css')
+  link(rel='stylesheet' type='text/css' media='screen' href='css/css_parts/topHeader.css')
+  link(rel='stylesheet' type='text/css' media='screen' href='css/css_parts/mainMenu.css')
+  link(rel='stylesheet' type='text/css' media='screen' href='css/css_parts/footer.css')
+header.header_area.container-fluid
+  //Top Header Area
+  include template-parts/topHeader.pug
+  // Menu
+  include template-parts/mainMenu.pug
+
+//section1
+section.section_1.container
+  .row
+    .col-9.right_area
+      div.post.container
+        p.post_tag.text-center CÔNG THỨC NẤU ĂN
+        p.post_title.text-center BÀO NGƯ HẤP CHANH TÂY
+        p.post_subtitle.text-center Ngày 8 /9/2018, by NhatMinh, 2 bình luận
+        div.post_image.text-center
+          img(src='./images/singerBlog_page/blog1.jpg' alt='image')
+        div
+          p.post_content How did the hand pies look? Did you love the brownies? How many choux did you eat in one sitting? Yes, these are the things I think about. So today, after creating a gorgeous selection of our favorites for a client to send as a new year’s gift, I was given a gift of my own: direct feedback from the recipients of the pastries. I was so happy, I had to share it with you.
+          p.post_content So here it is, you loving what we love. Maybe I don’t know where to look for spicy food in Europe, or maybe my idea of spicy differs from the palate here, but I’ve noticed that there’s a decided lack of spicy heat on this side of the pond. I haven’t turned into one of those spice monsters that travel around with ghost chilli pepper flakes in their pocket, but I do appreciate that tingly burn you get when digging in to a perfectly spicy dish.
+        div.post_image.text-center
+          img(src='./images/singerBlog_page/blog2.jpg' alt='image')
+        div
+          p.post_content How did the hand pies look? Did you love the brownies? How many choux did you eat in one sitting? Yes, these are the things I think about. So today, after creating a gorgeous selection of our favorites for a client to send as a new year’s gift, I was given a gift of my own: direct feedback from the recipients of the pastries. I was so happy, I had to share it with you.
+          p.post_content So here it is, you loving what we love. Maybe I don’t know where to look for spicy food in Europe, or maybe my idea of spicy differs from the palate here, but I’ve noticed that there’s a decided lack of spicy heat on this side of the pond. I haven’t turned into one of those spice monsters that travel around with ghost chilli pepper flakes in their pocket, but I do appreciate that tingly burn you get when digging in to a perfectly spicy dish.
+        hr
+      .author.row
+        .col-2
+          .iamge_author
+            img(src='./images/singerBlog_page/author1.png' alt='image')
+        .col-10
+          p.author_name Nhat Minh
+          p.info Did you love the brownies? How many choux did you eat in one sitting? Yes, these are the things I think about. So today, after creating a gorgeous selection of our favorites for a client to send as a new year's gift, I was given a gift of my own: direct feedback from the recipients of the pastries.
+          .view_all
+            a(href="#") Xem thêm bài viết của Nhat Minh
+        hr
+      .comment BÌNH LUẬN
+        hr
+        .row 
+          .col-2.avatar_comter
+            img(src='./images/singerBlog_page/author1.png' alt='image') 
+          .col-10.form_comment
+            .vote
+            .name_comment Sơn Tùng M-TP
+            .date_comment 8/8/2019
+            .content_comment Vivamus orci sem, consectetur ut stibulum a, semper ac dui. Proin aliquam mi nec hendrerit. Sed entum velit vel ip bibendum tristique. Orci sem, consectetur ut stibulum a, semper ac dui. Proin aliquam mi nec hendrerit. Sed entum velit vel ip bibendum tristique.
+
+        hr
+        .post_comment Để lại đánh giá của bạn
+            .row
+                .col-6.form-group
+                    label(for='') Tên
+                    input#exampleInputEmail1.form-control(type='email' aria-describedby='emailHelp' placeholder='Enter email')
+                .col-6.form-group
+                    label(for='') Email
+                    input#exampleInputEmail1.form-control(type='email' aria-describedby='emailHelp' placeholder='Enter email')
+            .form-group
+                label(for='') Bình luận của bạn
+                textarea#exampleFormControlTextarea1.form-control(rows='3')
+            .text-right
+                button.btn(type='submit') Hoàn thành
+
+
+    .col-3.left_area
+      // Search form
+      form.form-inline.md-form.form-sm.active-cyan-2.mt-2
+        input.form-control.form-control-sm.mr-3.w-75(type='text' placeholder='Tìm kiếm' aria-label='Search')
+        i.fas.fa-search(aria-hidden='true')
+
+      .about_us Về chúng tôi
+        hr
+        .text-center 
+            img(src='./images/singerBlog_page/author1.png' alt='image')
+        .intro Hello! My name is Karen. It’s so very nice to meet you. I happily share my passion for all things I cook.
+    //-   .social_network Mạng xã hội
+    //-     hr
+
+    //-   .instagram Ảnh trên Instagram
+    //-     hr
+
+
+//footer
+include template-parts/footer.pug
+
+// Optional JavaScript
+// jQuery first, then Popper.js, then Bootstrap JS
+script(type='text/javascript' src='js/script.js')
+script(src='https://code.jquery.com/jquery-3.3.1.slim.min.js' integrity='sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo' crossorigin='anonymous')
+script(src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js' integrity='sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1' crossorigin='anonymous')
+script(src='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js' integrity='sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM' crossorigin='anonymous')

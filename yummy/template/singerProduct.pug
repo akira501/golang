@@ -1,0 +1,200 @@
+doctype html
+head
+  meta(charset='utf-8')
+  meta(http-equiv='X-UA-Compatible' content='IE=edge')
+  title Yummy Restaurant
+  meta(name='viewport' content='width=device-width, initial-scale=1')
+  // Bootstrap CSS
+  link(rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css' integrity='sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T' crossorigin='anonymous')
+  // fontAweSome
+  link(rel='stylesheet' href='https://use.fontawesome.com/releases/v5.5.0/css/all.css' integrity='sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU' crossorigin='anonymous')
+  //slick
+  link(rel='stylesheet' type='text/css' href='js/slick/slick.css')
+  // Add the new slick-theme.css if you want the default styling
+  link(rel='stylesheet' type='text/css' href='js/slick/slick-theme.css')
+  // icon
+  link(rel='icon' href='images/core_img/favicon.ico')
+  // Fonts
+  link(rel='stylesheet' type='text/css' media='screen' href='css/stylesheet.css')
+  link(href="https://fonts.googleapis.com/css?family=Dancing+Script|Great+Vibes|Poppins|Prata&display=swap" rel="stylesheet")
+  // My css
+  link(rel='stylesheet' type='text/css' media='screen' href='css/main.css')
+  link(rel='stylesheet' type='text/css' media='screen' href='css/singerProduct.css')
+  link(rel='stylesheet' type='text/css' media='screen' href='css/css_parts/topHeader.css')
+  link(rel='stylesheet' type='text/css' media='screen' href='css/css_parts/mainMenu.css')
+  link(rel='stylesheet' type='text/css' media='screen' href='css/css_parts/footer2.css')
+header.header_area.container-fluid
+  //Top Header Area
+  include template-parts/topHeader.pug
+  // Menu
+  include template-parts/mainMenu.pug
+
+//section1
+section.section_1.container-fluid
+  .product_area
+    .main_product.row
+      .col-6.image_area
+        .slider-for
+          div
+            img(width='300' height='169' src='images/singerProduct_Page/sp5.jpg' alt='Xem chi tiết')
+          div
+            img(width='300' height='169' src='images/singerProduct_Page/sp1.jpg' alt='Xem chi tiết')
+          div
+            img(width='300' height='169' src='images/singerProduct_Page/sp2.jpg' alt='Xem chi tiết')
+          div
+            img(width='300' height='169' src='images/singerProduct_Page/sp3.jpg' alt='Xem chi tiết')
+          div
+            img(width='300' height='169' src='images/singerProduct_Page/sp4.jpeg' alt='Xem chi tiết')
+        .slider-nav
+          div
+            img(width='300' height='169' src='images/singerProduct_Page/sp5.jpg' alt='Xem chi tiết')
+          div
+            img(width='300' height='169' src='images/singerProduct_Page/sp1.jpg' alt='Xem chi tiết')
+          div
+            img(width='300' height='169' src='images/singerProduct_Page/sp2.jpg' alt='Xem chi tiết')
+          div
+            img(width='300' height='169' src='images/singerProduct_Page/sp3.jpg' alt='Xem chi tiết')
+          div
+            img(width='300' height='169' src='images/singerProduct_Page/sp4.jpeg' alt='Xem chi tiết')
+      .col-6.product_content_area
+        //- .sub_menu HOME > THỊT > BÍT TẾT BÒ KOBE
+        p.name_product Bít Tết Bò Kobe
+        p.price_product 50.000 vnd
+        p.sub_product Morbi ut arcu dolor. Maecenas id nulla nec nibh viverra vehicula. Cras feugiat, corper. lla vehicula, lacus ut suscipit fermentum, turpis felis ultricies dui, magna eu lacinia ullamcorper. lla vehicula, lacus ut suscipit fermentum, turpis felis ultricies dui.
+        hr
+        p.ingredients Thành phần chính: 
+          p.igd - Dứa gai
+          p.igd - Kiwi
+          p.igd - Hạt điều
+        .quantity.d-flex.pt-2
+          button.qty-decrease(onclick='' type='button') -
+          input#qty(type='text' name='quantity' value='1' size='4')
+          button.qty-increase(onclick='' type='button') +
+          .btn_chose
+            a(href='cart.html')
+              button.btn(type='submit') Thêm vào giỏ hàng
+        hr
+        .tag Tags: Món chính
+section.section_2.container
+  .comment BÌNH LUẬN
+  hr
+  .row 
+    .col-1.avatar_comter
+      img(src="images/singerProduct_Page/sontung.png", alt="") 
+    .col-11.form_comment
+      .vote
+        span.fa.fa-star.checked
+        span.fa.fa-star.checked
+        span.fa.fa-star.checked
+        span.fa.fa-star.checked
+        span.fa.fa-star.checked
+      .name_comment Sơn Tùng M-TP
+      .date_comment 8/8/2019
+      .content_comment Món này quá ngon luôn. Tôi ăn hoài mà không thấy chán à. Mang một con bò đến đây cho tôi!!! Các bạn nhất định phải thử ăn qua món này nhé. Sky ơi!
+
+  hr
+  .post_comment Để lại đánh giá của bạn
+    hr
+    .row
+      .col-6.form-group
+        label(for='') Tên
+        input#exampleInputEmail1.form-control(type='email' aria-describedby='emailHelp' placeholder='Nhập tên gọi của bạn')
+      .col-6.form-group
+        label(for='') Email
+        input#exampleInputEmail1.form-control(type='email' aria-describedby='emailHelp' placeholder='Nhập địa chỉ Email')
+    .form-group
+      label(for='') Bình luận của bạn
+      textarea#exampleFormControlTextarea1.form-control(rows='3' placeholder='Viết bình luận')
+    .text-left
+      button.btn(type='submit') Hoàn thành
+
+section.section_3.container
+  .title SẢN PHẨM LIÊN QUAN
+  hr
+  .card-deck.row
+    .col-3       
+      .card
+        .hover_area
+          img.card-img-top(src='./images/shop_Page/sp5.jpg' alt='Card image cap')
+          .hover_card
+            a(href='cart.html') <i class="fas fa-cart-plus"></i>
+            a(href='cart.html') <i class="fas fa-expand"></i>
+            a(href='cart.html') <i class="fas fa-heart"></i>
+        .card-body
+          .text-center
+            a(href='singerProduct.html').card-text.name
+              | Bít Tết Bò Kobe
+          p.card-text.tag.text-center
+            small.text-muted Món chính
+            hr
+          p.card-text.price.text-center
+            | 50.000 VND
+    .col-3       
+      .card
+        .hover_area
+          img.card-img-top(src='./images/shop_Page/sp1.jpg' alt='Card image cap')
+          .hover_card
+            a(href='cart.html') <i class="fas fa-cart-plus"></i>
+            a(href='cart.html') <i class="fas fa-expand"></i>
+            a(href='cart.html') <i class="fas fa-heart"></i>
+        .card-body
+          .text-center
+            a(href='singerProduct.html').card-text.name
+              | Bít Tết Bò Kobe
+          p.card-text.tag.text-center
+            small.text-muted Món chính
+            hr
+          p.card-text.price.text-center
+            | 50.000 VND
+    .col-3       
+      .card
+        .hover_area
+          img.card-img-top(src='./images/shop_Page/sp2.jpg' alt='Card image cap')
+          .hover_card
+            a(href='cart.html') <i class="fas fa-cart-plus"></i>
+            a(href='cart.html') <i class="fas fa-expand"></i>
+            a(href='cart.html') <i class="fas fa-heart"></i>
+        .card-body
+          .text-center
+            a(href='singerProduct.html').card-text.name
+              | Bít Tết Bò Kobe
+          p.card-text.tag.text-center
+            small.text-muted Món chính
+            hr
+          p.card-text.price.text-center
+            | 50.000 VND
+    .col-3       
+      .card
+        .hover_area
+          img.card-img-top(src='./images/shop_Page/sp3.jpg' alt='Card image cap')
+          .hover_card
+            a(href='cart.html') <i class="fas fa-cart-plus"></i>
+            a(href='cart.html') <i class="fas fa-expand"></i>
+            a(href='cart.html') <i class="fas fa-heart"></i>
+        .card-body
+          .text-center
+            a(href='singerProduct.html').card-text.name
+              | Bít Tết Bò Kobe
+          p.card-text.tag.text-center
+            small.text-muted Món chính
+            hr
+          p.card-text.price.text-center
+            | 50.000 VND
+
+
+//footer
+include template-parts/footer2.pug
+
+// Optional JavaScript
+// jQuery first, then Popper.js, then Bootstrap JS
+script(src='//code.jquery.com/jquery-1.11.1.min.js')
+script(src='https://code.jquery.com/jquery-3.3.1.slim.min.js' integrity='sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo' crossorigin='anonymous')
+script(src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js' integrity='sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1' crossorigin='anonymous')
+script(src='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js' integrity='sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM' crossorigin='anonymous')
+
+
+// slick
+script(type='text/javascript' src='js/slick/slick.min.js')
+
+script(type='text/javascript' src='js/script.js')
+script(type='text/javascript' src='./js/footer2.js')

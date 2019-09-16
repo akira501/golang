@@ -1,0 +1,112 @@
+doctype html
+head
+  meta(charset='utf-8')
+  meta(http-equiv='X-UA-Compatible' content='IE=edge')
+  title Yummy Restaurant - checkout
+  meta(name='viewport' content='width=device-width, initial-scale=1')
+  // Bootstrap CSS
+  link(rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css' integrity='sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T' crossorigin='anonymous')
+  // fontAweSome
+  link(rel='stylesheet' href='https://use.fontawesome.com/releases/v5.5.0/css/all.css' integrity='sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU' crossorigin='anonymous')
+  //slick
+  link(rel='stylesheet' type='text/css' href='js/slick/slick.css')
+  // Add the new slick-theme.css if you want the default styling
+  link(rel='stylesheet' type='text/css' href='js/slick/slick-theme.css')
+  // icon
+  link(rel='icon' href='images/core_img/favicon.ico')
+  // Fonts
+  link(rel='stylesheet' type='text/css' media='screen' href='css/stylesheet.css')
+  link(href="https://fonts.googleapis.com/css?family=Dancing+Script|Great+Vibes|Poppins|Prata&display=swap" rel="stylesheet")
+  // My css
+  link(rel='stylesheet' type='text/css' media='screen' href='css/main.css')
+  link(rel='stylesheet' type='text/css' media='screen' href='css/checkOut.css')
+  link(rel='stylesheet' type='text/css' media='screen' href='css/css_parts/topHeader.css')
+  link(rel='stylesheet' type='text/css' media='screen' href='css/css_parts/mainMenu.css')
+  link(rel='stylesheet' type='text/css' media='screen' href='css/css_parts/footer2.css')
+header.header_area.container-fluid
+  //Top Header Area
+  include template-parts/topHeader.pug
+  // Menu
+  include template-parts/mainMenu.pug
+
+//section1
+section.section_1.container
+  .title.text-center Check Out
+    hr
+  .sub_title.text-center Home > Check Out
+  .row.detail_cart_area
+    .col-6.detail_cart
+      .title_cart CHI TIẾT ĐƠN HÀNG
+      .form-group
+        label(for='') Họ tên *
+        input#exampleInputEmail1.form-control(type='text' aria-describedby='' placeholder='Nhập họ tên')
+      .form-group
+        label(for='') Điện thoại di động *
+        input#exampleInputEmail1.form-control(type='text' aria-describedby='' placeholder='Nhập số điện thoại')
+      .form-group
+        label(for='') Địa chỉ *
+        input#exampleInputEmail1.form-control(type='text' aria-describedby='' placeholder='Nhập địa chỉ')
+      .form-check
+        input#defaultCheck1.form-check-input(type='checkbox' value='')
+        label.form-check-label(for='defaultCheck1')
+          | Tạo tài khoản
+      .form-check
+        input#defaultCheck1.form-check-input(type='checkbox' value='')
+        label.form-check-label(for='defaultCheck1')
+          | Ship đến địa chỉ khác
+      .form-group.note
+        label(for='exampleFormControlTextarea1') Ghi chú
+        textarea#exampleFormControlTextarea1.form-control(rows='3' placeholder='Viết ghi chú của bạn')
+    .col-6.my_cart
+      .my_cart_area
+        .title_my_cart.text-center GIỎ HÀNG CỦA BẠN
+        div
+          .row
+            .col-2.image_product
+              img.img-fluid(src='./images/cart_Page/img1.jpg')
+            .col-6.name_product Salad hoa quả
+            .col-4.price_product 50000 VND
+          hr
+          .row
+            .col-8.name Tạm tính
+            .col-4.price 50000 VND
+          hr
+          .row
+            .col-8.name Phí vận chuyển
+            .col-4.price 5000 VND
+          hr
+          .row
+            .col-8.name_total Tổng tiền
+            .col-4.price_total 55000 VND
+        div.pay_area
+          .title_pay Chọn hình thức thanh toán
+          hr
+          .form-check
+            input#exampleRadios1.form-check-input(type='radio' name='exampleRadios' value='option1' checked='')
+            label.form-check-label(for='exampleRadios1')
+              | Thanh toán bằng tiền mặt khi nhận hàng
+          .form-check
+            input#exampleRadios2.form-check-input(type='radio' name='exampleRadios' value='option2')
+            label.form-check-label(for='exampleRadios2')
+              | Thanh toán bằng VISA, MASTER
+          .form-check
+            input#exampleRadios3.form-check-input(type='radio' name='exampleRadios' value='option3')
+            label.form-check-label(for='exampleRadios3')
+              | Thẻ ATM nội địa/ Internet Banking
+          div.text-center 
+            button.btn ĐẶT MUA
+
+
+//footer
+include template-parts/footer2.pug
+
+// Optional JavaScript
+// jQuery first, then Popper.js, then Bootstrap JS
+script(src='https://code.jquery.com/jquery-3.3.1.slim.min.js' integrity='sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo' crossorigin='anonymous')
+script(src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js' integrity='sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1' crossorigin='anonymous')
+script(src='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js' integrity='sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM' crossorigin='anonymous')
+// slick
+script(type='text/javascript' src='js/slick/slick.min.js')
+
+script(type='text/javascript' src='js/script.js')
+script(type='text/javascript' src='./js/footer2.js')

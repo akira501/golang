@@ -1,0 +1,106 @@
+doctype html
+head
+  meta(charset='utf-8')
+  meta(http-equiv='X-UA-Compatible' content='IE=edge')
+  title Yummy Restaurant - Thực đơn
+  meta(name='viewport' content='width=device-width, initial-scale=1')
+  // Bootstrap CSS
+  link(rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css' integrity='sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T' crossorigin='anonymous')
+  // fontAweSome
+  link(rel='stylesheet' href='https://use.fontawesome.com/releases/v5.5.0/css/all.css' integrity='sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU' crossorigin='anonymous')
+  //slick
+  link(rel='stylesheet' type='text/css' href='js/slick/slick.css')
+  // Add the new slick-theme.css if you want the default styling
+  link(rel='stylesheet' type='text/css' href='js/slick/slick-theme.css')
+  // icon
+  link(rel='icon' href='images/core_img/favicon.ico')
+  // Fonts
+  link(rel='stylesheet' type='text/css' media='screen' href='css/stylesheet.css')
+  link(href="https://fonts.googleapis.com/css?family=Dancing+Script|Great+Vibes|Poppins|Prata&display=swap" rel="stylesheet")
+  link(href='https://fonts.googleapis.com/css?family=Fredericka+the+Great&display=swap' rel='stylesheet')
+  // My css
+  link(rel='stylesheet' type='text/css' media='screen' href='css/main.css')
+  link(rel='stylesheet' type='text/css' media='screen' href='css/menu.css')
+  link(rel='stylesheet' type='text/css' media='screen' href='css/css_parts/topHeader.css')
+  link(rel='stylesheet' type='text/css' media='screen' href='css/css_parts/mainMenu.css')
+  link(rel='stylesheet' type='text/css' media='screen' href='css/css_parts/footer2.css')
+header.header_area.container-fluid
+  //Top Header Area
+  include template-parts/topHeader.pug
+  // Menu
+  include template-parts/mainMenu.pug
+  //Header
+  .header_main.text-center 
+    .content_header _~ Menu ~_
+//section1
+section.section_1.container-fluid
+  .menu.row
+    .col-7.detail_menu
+      p.title 
+        span(style='color:#FD5B00;') Thực đơn 
+        | Bữa sáng
+      p.sub_title Tất cả các ngày trong tuần 6h30-10h30
+      div.dish
+        p.dish_name Trứng tráng rau củ
+        p.dish_info Kèm bánh mỳ và sốt chua cay. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .50,000 VND
+      div.dish
+        p.dish_name Trứng tráng rau củ
+        p.dish_info Kèm bánh mỳ và sốt chua cay. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .50,000 VND
+      div.dish
+        p.dish_name Trứng tráng rau củ
+        p.dish_info Kèm bánh mỳ và sốt chua cay. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .50,000 VND
+      div.dish
+        p.dish_name Trứng tráng rau củ
+        p.dish_info Kèm bánh mỳ và sốt chua cay. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .50,000 VND
+      div.dish
+        p.dish_name Trứng tráng rau củ
+        p.dish_info Kèm bánh mỳ và sốt chua cay. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .50,000 VND
+    .col-5.select_menu
+      .row.select
+        .col-3.image
+          img(src="./images/menu_Page/breakfast.png", alt="")
+        .col-9.content_select
+          p.title_select Bữa sáng
+          p.sub_title_select Tất cả các ngày trong tuần 6h30-10h30
+      hr
+      .row.select
+        .col-3.image
+          img(src="./images/menu_Page/lunch.png", alt="")
+        .col-9.content_select
+          p.title_select Bữa trưa
+          p.sub_title_select Tất cả các ngày trong tuần 6h30-10h30
+      hr
+      .row.select
+        .col-3.image
+          img(src="./images/menu_Page/dinner.png", alt="")
+        .col-9.content_select
+          p.title_select Bữa tối
+          p.sub_title_select Tất cả các ngày trong tuần 6h30-10h30
+      hr
+      .row.select
+        .col-3.image
+          img(src="./images/menu_Page/drinks.png", alt="")
+        .col-9.content_select
+          p.title_select Đồ uống
+          p.sub_title_select Tất cả các ngày trong tuần 6h30-10h30
+
+section.section_2.container-fluid
+
+
+
+
+
+//footer
+include template-parts/footer2.pug
+
+// Optional JavaScript
+// jQuery first, then Popper.js, then Bootstrap JS
+script(src='https://code.jquery.com/jquery-3.3.1.slim.min.js' integrity='sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo' crossorigin='anonymous')
+script(src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js' integrity='sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1' crossorigin='anonymous')
+script(src='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js' integrity='sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM' crossorigin='anonymous')
+
+// slick
+script(type='text/javascript' src='js/slick/slick.min.js')
+
+script(type='text/javascript' src='js/script.js')
+script(type='text/javascript' src='./js/footer2.js')

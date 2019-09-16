@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Yummy Restaurant - checkout</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Bootstrap CSS-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <!-- fontAweSome-->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+  <!--slick-->
+  <link rel="stylesheet" type="text/css" href="js/slick/slick.css">
+  <!-- Add the new slick-theme.css if you want the default styling-->
+  <link rel="stylesheet" type="text/css" href="js/slick/slick-theme.css">
+  <!-- icon-->
+  <link rel="icon" href="images/core_img/favicon.ico">
+  <!-- Fonts-->
+  <link rel="stylesheet" type="text/css" media="screen" href="css/stylesheet.css">
+  <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Great+Vibes|Poppins|Prata&amp;display=swap" rel="stylesheet">
+  <!-- My css-->
+  <link rel="stylesheet" type="text/css" media="screen" href="css/main.css">
+  <link rel="stylesheet" type="text/css" media="screen" href="css/checkOut.css">
+  <link rel="stylesheet" type="text/css" media="screen" href="css/css_parts/topHeader.css">
+  <link rel="stylesheet" type="text/css" media="screen" href="css/css_parts/mainMenu.css">
+  <link rel="stylesheet" type="text/css" media="screen" href="css/css_parts/footer2.css">
+</head>
+<header class="header_area container-fluid">
+  <!--Top Header Area-->
+  <!-- Top header-->
+  <div class="top_header_area container-fuild">
+    <div class="row container">
+      <div class="col-5 col-sm-5">
+        <!-- icon-->
+        <div class="top_social_bar"><a href="#"><i class="fab fa-facebook" aria-hidden="true"></i></a><a href="#"><i class="fab fa-twitter" aria-hidden="true"></i></a><a href="#"><i class="fab fa-linkedin" aria-hidden="true"></i></a><a href="#"><i class="fab fa-skype" aria-hidden="true"></i></a><a href="#"><i class="fab fa-dribbble" aria-hidden="true"></i></a></div>
+      </div>
+      <div class="col-7 col-sm-7"></div>
+    </div>
+  </div>
+  <!-- Menu-->
+  <div class="menu-main container-fluid">
+    <nav class="navbar navbar-expand-lg navbar-light"><a class="navbar-brand" href="#">YUMMY</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="index.html">TRANG CHỦ</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">GIỚI THIỆU</a></li>
+          <li class="nav-item"><a class="nav-link" href="menu.html">THỰC ĐƠN</a></li>
+          <li class="nav-item"><a class="nav-link" href="blog.html">BÀI VIẾT</a></li>
+          <li class="nav-item"><a class="nav-link" href="shop.html">CỬA HÀNG</a></li>
+          <li class="nav-item-sp"><a class="nav-link nav-border" href="reservation.html">ĐẶT BÀN</a></li>
+          <li class="nav-item-sp"><a class="nav-link nav-icon" href="cart.html"><i class="fas fa-cart-plus"></i></a></li>
+          <li class="nav-item-sp"><a class="nav-link nav-icon" href="#"><i class="fas fa-search"></i></a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+</header>
+<!--section1-->
+<section class="section_1 container">
+  <div class="title text-center">Check Out
+    <hr>
+  </div>
+  <div class="sub_title text-center">Home > Check Out</div>
+  <div class="row detail_cart_area">
+    <div class="col-6 detail_cart">
+      <div class="title_cart">CHI TIẾT ĐƠN HÀNG</div>
+      <div class="form-group">
+        <label for="">Họ tên *</label>
+        <input class="form-control" id="exampleInputEmail1" type="text" aria-describedby="" placeholder="Nhập họ tên">
+      </div>
+      <div class="form-group">
+        <label for="">Điện thoại di động *</label>
+        <input class="form-control" id="exampleInputEmail1" type="text" aria-describedby="" placeholder="Nhập số điện thoại">
+      </div>
+      <div class="form-group">
+        <label for="">Địa chỉ *</label>
+        <input class="form-control" id="exampleInputEmail1" type="text" aria-describedby="" placeholder="Nhập địa chỉ">
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" id="defaultCheck1" type="checkbox" value="">
+        <label class="form-check-label" for="defaultCheck1">Tạo tài khoản</label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" id="defaultCheck1" type="checkbox" value="">
+        <label class="form-check-label" for="defaultCheck1">Ship đến địa chỉ khác</label>
+      </div>
+      <div class="form-group note">
+        <label for="exampleFormControlTextarea1">Ghi chú</label>
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Viết ghi chú của bạn"></textarea>
+      </div>
+    </div>
+    <div class="col-6 my_cart">
+      <div class="my_cart_area">
+        <div class="title_my_cart text-center">GIỎ HÀNG CỦA BẠN</div>
+        <div>
+          <div class="row">
+            <div class="col-2 image_product"><img class="img-fluid" src="./images/cart_Page/img1.jpg"></div>
+            <div class="col-6 name_product">Salad hoa quả</div>
+            <div class="col-4 price_product">50000 VND</div>
+          </div>
+          <hr>
+          <div class="row">
+            <div class="col-8 name">Tạm tính</div>
+            <div class="col-4 price">50000 VND</div>
+          </div>
+          <hr>
+          <div class="row">
+            <div class="col-8 name">Phí vận chuyển</div>
+            <div class="col-4 price">5000 VND</div>
+          </div>
+          <hr>
+          <div class="row">
+            <div class="col-8 name_total">Tổng tiền</div>
+            <div class="col-4 price_total">55000 VND</div>
+          </div>
+        </div>
+        <div class="pay_area">
+          <div class="title_pay">Chọn hình thức thanh toán</div>
+          <hr>
+          <div class="form-check">
+            <input class="form-check-input" id="exampleRadios1" type="radio" name="exampleRadios" value="option1" checked="">
+            <label class="form-check-label" for="exampleRadios1">Thanh toán bằng tiền mặt khi nhận hàng</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" id="exampleRadios2" type="radio" name="exampleRadios" value="option2">
+            <label class="form-check-label" for="exampleRadios2">Thanh toán bằng VISA, MASTER</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" id="exampleRadios3" type="radio" name="exampleRadios" value="option3">
+            <label class="form-check-label" for="exampleRadios3">Thẻ ATM nội địa/ Internet Banking</label>
+          </div>
+          <div class="text-center"> 
+            <button class="btn">ĐẶT MUA</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--footer-->
+<footer class="container-fuild">
+  <div class="top_footer">
+    <h1 class="text-center title">INSTARGRAM</h1>
+    <hr>
+    <div class="slider" id="single_item">
+      <div><img width="300" height="169" src="images/home_Page/img1.jpg" alt="Xem chi tiết"></div>
+      <div><img width="300" height="169" src="images/home_Page/img2.jpg" alt="Xem chi tiết"></div>
+      <div><img width="300" height="169" src="images/home_Page/img3.jpg" alt="Xem chi tiết"></div>
+      <div><img width="300" height="169" src="images/home_Page/img4.jpg" alt="Xem chi tiết"></div>
+      <div><img width="300" height="169" src="images/home_Page/img5.jpg" alt="Xem chi tiết"></div>
+      <div><img width="300" height="169" src="images/home_Page/img1.jpg" alt="Xem chi tiết"></div>
+      <div><img width="300" height="169" src="images/home_Page/img2.jpg" alt="Xem chi tiết"></div>
+      <div><img width="300" height="169" src="images/home_Page/img3.jpg" alt="Xem chi tiết"></div>
+      <div><img width="300" height="169" src="images/home_Page/img4.jpg" alt="Xem chi tiết"></div>
+      <div><img width="300" height="169" src="images/home_Page/img5.jpg" alt="Xem chi tiết"></div>
+    </div>
+  </div>
+  <div class="row main_footer">
+    <div class="col-6 logo">yummy</div>
+    <div class="col-6 right_area">
+      <div class="network d-flex flex-row-reverse"><a href="#"><i class="fab fa-facebook" aria-hidden="true"></i></a><a href="#"><i class="fab fa-twitter" aria-hidden="true"></i></a><a href="#"><i class="fab fa-linkedin" aria-hidden="true"></i></a><a href="#"><i class="fab fa-skype" aria-hidden="true"></i></a><a href="#"><i class="fab fa-dribbble" aria-hidden="true"></i></a></div>
+      <div class="make_by d-flex flex-row-reverse">© 2019 YUMMY. MAKED BY NHATMINH</div>
+    </div>
+  </div>
+</footer>
+<!-- Optional JavaScript-->
+<!-- jQuery first, then Popper.js, then Bootstrap JS-->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<!-- slick-->
+<script type="text/javascript" src="js/slick/slick.min.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+<script type="text/javascript" src="./js/footer2.js"></script>

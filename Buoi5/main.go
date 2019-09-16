@@ -53,6 +53,7 @@ func loginFunc(ctx iris.Context) {
 		ctx.StatusCode(iris.StatusInternalServerError)
 		ctx.WriteString(err.Error())
 	}
+	//
 	isRight := false
 
 	//var userID int
@@ -63,7 +64,7 @@ func loginFunc(ctx iris.Context) {
 		}
 	}
 	if isRight {
-		ctx.Writef("Sign in successfully \nUser id: %d")
+		ctx.Writef("Sign in successfully")
 	} else {
 		ctx.Writef("Failed to sign in")
 	}

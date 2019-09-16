@@ -1,0 +1,102 @@
+doctype html
+head
+  meta(charset='utf-8')
+  meta(http-equiv='X-UA-Compatible' content='IE=edge')
+  title Yummy Restaurant - Đặt bàn
+  meta(name='viewport' content='width=device-width, initial-scale=1')
+  // Bootstrap CSS
+  link(rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css' integrity='sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T' crossorigin='anonymous')
+  // fontAweSome
+  link(rel='stylesheet' href='https://use.fontawesome.com/releases/v5.5.0/css/all.css' integrity='sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU' crossorigin='anonymous')
+  // icon
+  link(rel='icon' href='images/core_img/favicon.ico')
+  //slick
+  link(rel='stylesheet' type='text/css' href='js/slick/slick.css')
+  // Add the new slick-theme.css if you want the default styling
+  link(rel='stylesheet' type='text/css' href='js/slick/slick-theme.css')
+  // Fonts
+  link(rel='stylesheet' type='text/css' media='screen' href='css/stylesheet.css')
+  link(href="https://fonts.googleapis.com/css?family=Dancing+Script|Great+Vibes|Poppins|Prata&display=swap" rel="stylesheet")
+  link(href='https://fonts.googleapis.com/css?family=Fredericka+the+Great&display=swap' rel='stylesheet')
+  // My css
+  link(rel='stylesheet' type='text/css' media='screen' href='css/main.css')
+  link(rel='stylesheet' type='text/css' media='screen' href='css/reservation.css')
+  link(rel='stylesheet' type='text/css' media='screen' href='css/css_parts/topHeader.css')
+  link(rel='stylesheet' type='text/css' media='screen' href='css/css_parts/mainMenu.css')
+  link(rel='stylesheet' type='text/css' media='screen' href='css/css_parts/footer2.css')
+header.header_area.container-fluid
+  //Top Header Area
+  include template-parts/topHeader.pug
+  // Menu
+  include template-parts/mainMenu.pug
+  //Header
+  .header_main.text-center 
+    .content_header Reservation
+//section1
+section.section_1.container-fluid
+    div
+        p.heading.text-center 
+            span(style='color:#FD5B00;') Đặt bàn 
+            | tại yummy
+        .row.container-fluid.content_main
+            .col-6.content_left
+                p.title Tất cả các yêu cầu đặt bàn đều sẽ được chúng tôi xác nhận lại.
+                p Xin quý khách vui lòng đợi điện thoại vài phút để chúng tôi xác nhận quý khách đã đặt bàn thành công. Nếu không xác nhận được, đặt bàn của quý khách sẽ không được chấp nhận. 
+                p Thứ 7 và ngày nghỉ lễ chúng tôi sẽ không nhận đặt bàn trực tuyến. Hãy đến nhà hàng để được phục vụ trực tiếp.
+            .col-6.content_right
+                p.title Tất cả các yêu cầu đặt bàn đều sẽ được chúng tôi xác nhận lại.
+                p Xin quý khách vui lòng đợi điện thoại vài phút để chúng tôi xác nhận quý khách đã đặt bàn thành công. Nếu không xác nhận được, đặt bàn của quý khách sẽ không được chấp nhận. 
+                p Thứ 7 và ngày nghỉ lễ chúng tôi sẽ không nhận đặt bàn trực tuyến. Hãy đến nhà hàng để được phục vụ trực tiếp.
+
+
+section.section_2.container 
+    form.form_reservation
+        p.form_title.text-center Thông tin đặt bàn
+        small#emailHelp.form-text.text-muted.text-center * Vui lòng điền đầy đủ thông tin bên dưới để đặt bàn
+        .form-group
+            label(for='exampleInputEmail1') Tên khách hàng *
+            input#exampleInputEmail1.form-control(type='email' aria-describedby='emailHelp' placeholder='')
+        .row
+            .col-6.form-group
+                label(for='exampleInputEmail1') Số điện thoại *
+                input#exampleInputEmail1.form-control(type='email' aria-describedby='emailHelp' placeholder='')
+            .col-6.form-group
+                label(for='exampleInputEmail1') Số khách *
+                input#exampleInputEmail1.form-control(type='email' aria-describedby='emailHelp' placeholder='')
+        .row
+            .col-6.form-group
+                label(for='exampleInputEmail1') Ngày *
+                input#exampleInputEmail1.form-control(type='email' aria-describedby='emailHelp' placeholder='')
+            .col-6.form-group
+                label(for='exampleInputEmail1') Giờ *
+                input#exampleInputEmail1.form-control(type='email' aria-describedby='emailHelp' placeholder='')    
+
+        .form-group
+            label(for='exampleFormControlTextarea1') Ghi chú
+            textarea#exampleFormControlTextarea1.form-control(rows='3' placeholder='')
+        
+        .btn_detail.text-center
+            button.btn(type='submit') Xác nhận đặt bàn
+            small#emailHelp.form-text.text-muted * Chúng tôi sẽ gọi lại để xác nhận ngay, vui lòng đợi điện thoai trong 5 phút
+
+//- section 3
+//- section.section_3.container-fluid
+//-     iframe(src='http://www.youtube.com/embed/CoAvaYOwm6k' height='690px' width='1351' allowfullscreen='' frameborder='0')
+
+
+
+
+
+//footer
+include template-parts/footer2.pug
+
+// Optional JavaScript
+// jQuery first, then Popper.js, then Bootstrap JS
+script(src='https://code.jquery.com/jquery-3.3.1.slim.min.js' integrity='sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo' crossorigin='anonymous')
+script(src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js' integrity='sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1' crossorigin='anonymous')
+script(src='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js' integrity='sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM' crossorigin='anonymous')
+// slick
+script(type='text/javascript' src='js/slick/slick.min.js')
+
+script(type='text/javascript' src='js/script.js')
+script(type='text/javascript' src='./js/footer2.js')
